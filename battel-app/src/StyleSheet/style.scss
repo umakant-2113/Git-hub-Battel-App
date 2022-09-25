@@ -1,0 +1,342 @@
+@import 'reset';
+@import 'global';
+// general sccs
+
+#root {
+  padding: 3rem 0;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+    margin-right: 1.7rem;
+  }
+}
+.popular {
+  display: flex;
+  p {
+    font-size: 1.5rem;
+    margin-left: 1.3rem;
+  }
+}
+
+.tag-box {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 2rem;
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.Active {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: coral;
+}
+
+.no-active {
+  color: cornflowerblue;
+}
+.big-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.4rem;
+}
+
+.item-box {
+  background-color: rgb(235, 235, 235);
+  flex: 0 1 23.5%;
+  border-radius: 15px;
+  padding: 1.6rem 0;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+  }
+}
+.figure {
+  text-align: center;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.3rem 0 1rem 0;
+}
+.name {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0.3rem 0;
+  color: rgb(144, 63, 54);
+}
+#tourch {
+  cursor: pointer;
+}
+#bulb {
+  display: none;
+  color: white;
+}
+.sm-box {
+  h3 {
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+  }
+  p {
+    font-size: 1.4rem;
+    margin: 0.2rem 0;
+  }
+}
+.fa-user {
+  color: rgb(255, 191, 116);
+  //   font-size: 1.3rem;
+  //   margin: 0.3rem;
+}
+.fa-star {
+  color: rgb(255, 215, 0);
+}
+.fa-code-fork {
+  color: cornflowerblue;
+}
+.fa-triangle-exclamation {
+  color: rgb(241, 138, 147);
+}
+
+.battel-div {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  //   border: 2px solid red;
+  margin-bottom: 2rem;
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
+.battel-box {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.battel-div2 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+}
+.fa-user-group {
+  font-size: 10rem;
+  color: rgb(255, 191, 116);
+}
+.fa-trophy {
+  font-size: 10rem;
+  color: #ffd700;
+}
+.fa-jet-fighter {
+  font-size: 10rem;
+  color: rgb(114, 114, 114);
+}
+.div {
+  h2 {
+    font-size: 1.6rem;
+    margin: 0.3rem 0 0.8rem 0;
+    word-spacing: 6px;
+  }
+}
+
+.player {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.form-div .input {
+  width: 60%;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+.submit-btn {
+  font-size: 1.4rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.user1-data {
+  display: none;
+  // border: 2px solid red;
+  box-shadow: 2px 2px 6px 2px grey;
+  padding: 0.3rem 0;
+  position: relative;
+
+  width: 40%;
+}
+.user1-div {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+}
+.user1-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.user2-data {
+  display: none;
+  box-shadow: 2px 2px 6px 2px grey;
+  padding: 0.3rem 0;
+  width: 40%;
+}
+.user2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+  }
+}
+.user1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+  }
+}
+#bettal-btn {
+  text-align: center;
+  display: none;
+  button {
+    padding: 0.3rem 1rem;
+    font-size: 1.4rem;
+  }
+}
+#userdata-display {
+  display: none;
+  margin-top: 6rem;
+}
+
+.flex-30 {
+  flex: 0 1 27%;
+  height: 63vh;
+  padding: 1.4rem 0;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0px 0px 10px 1px cornflowerblue;
+  border-radius: 20px;
+}
+.display-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.display-btn {
+  text-align: center;
+  margin-top: 1rem;
+  button {
+    font-size: 1.3rem;
+    padding: 0.2rem 1rem;
+  }
+}
+
+.bettal-img {
+  height: 150px;
+  width: 150px;
+}
+.battel-data-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 35%;
+}
+.score {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  color: tomato;
+}
+.user-name {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+.login-user {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.fa-user {
+  margin-right: 1rem;
+}
+.location {
+  font-size: 1.15rem;
+  margin: 0.5rem 0;
+}
+.fa-compass {
+  color: teal;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+.followers {
+  font-size: 1.15rem;
+  color: brown;
+  margin: 0.5rem 0;
+}
+.fa-users {
+  color: #ffd700;
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+.following {
+  font-size: 1.15rem;
+  color: brown;
+  margin: 0.5rem 0;
+}
+.repo {
+  font-size: 1.15rem;
+  color: cornflowerblue;
+  margin: 0.5rem;
+}
+.fa-code {
+  color: cornflowerblue;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.fa-users-line {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}

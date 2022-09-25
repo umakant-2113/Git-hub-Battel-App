@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Positions */
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.35rem 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: purple;
+  border: 1px solid purple;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: purple;
+  border: 1px solid purple;
+}
+
+#root {
+  padding: 3rem 0;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header p {
+  font-size: 1.4rem;
+  margin-right: 1.7rem;
+}
+
+.popular {
+  display: flex;
+}
+.popular p {
+  font-size: 1.5rem;
+  margin-left: 1.3rem;
+}
+
+.tag-box {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.tag-box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Active {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: coral;
+}
+
+.no-active {
+  color: cornflowerblue;
+}
+
+.big-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.4rem;
+}
+
+.item-box {
+  background-color: rgb(235, 235, 235);
+  flex: 0 1 23.5%;
+  border-radius: 15px;
+  padding: 1.6rem 0;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.figure {
+  text-align: center;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.3rem 0 1rem 0;
+}
+
+.name {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0.3rem 0;
+  color: rgb(144, 63, 54);
+}
+
+#tourch {
+  cursor: pointer;
+}
+
+#bulb {
+  display: none;
+  color: white;
+}
+
+.sm-box h3 {
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+}
+.sm-box p {
+  font-size: 1.4rem;
+  margin: 0.2rem 0;
+}
+
+.fa-user {
+  color: rgb(255, 191, 116);
+}
+
+.fa-star {
+  color: rgb(255, 215, 0);
+}
+
+.fa-code-fork {
+  color: cornflowerblue;
+}
+
+.fa-triangle-exclamation {
+  color: rgb(241, 138, 147);
+}
+
+.battel-div {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.battel-div h2 {
+  font-size: 1.9rem;
+}
+
+.battel-box {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.battel-div2 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+}
+
+.fa-user-group {
+  font-size: 10rem;
+  color: rgb(255, 191, 116);
+}
+
+.fa-trophy {
+  font-size: 10rem;
+  color: #ffd700;
+}
+
+.fa-jet-fighter {
+  font-size: 10rem;
+  color: rgb(114, 114, 114);
+}
+
+.div h2 {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 0.8rem 0;
+  word-spacing: 6px;
+}
+
+.player {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.form-div .input {
+  width: 60%;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+.submit-btn {
+  font-size: 1.4rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.user1-data {
+  display: none;
+  box-shadow: 2px 2px 6px 2px grey;
+  padding: 0.3rem 0;
+  position: relative;
+  width: 40%;
+}
+
+.user1-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user1-div div {
+  display: flex;
+  align-items: center;
+}
+.user1-div div p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.user1-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user2-data {
+  display: none;
+  box-shadow: 2px 2px 6px 2px grey;
+  padding: 0.3rem 0;
+  width: 40%;
+}
+
+.user2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user2 p {
+  font-size: 1.4rem;
+}
+
+.user1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user1 p {
+  font-size: 1.4rem;
+}
+
+#bettal-btn {
+  text-align: center;
+  display: none;
+}
+#bettal-btn button {
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+}
+
+#userdata-display {
+  display: none;
+  margin-top: 6rem;
+}
+
+.flex-30 {
+  flex: 0 1 27%;
+  height: 63vh;
+  padding: 1.4rem 0;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0px 0px 10px 1px cornflowerblue;
+  border-radius: 20px;
+}
+
+.display-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.display-btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+.display-btn button {
+  font-size: 1.3rem;
+  padding: 0.2rem 1rem;
+}
+
+.bettal-img {
+  height: 150px;
+  width: 150px;
+}
+
+.battel-data-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 35%;
+}
+
+.score {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  color: tomato;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.login-user {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+.fa-user {
+  margin-right: 1rem;
+}
+
+.location {
+  font-size: 1.15rem;
+  margin: 0.5rem 0;
+}
+
+.fa-compass {
+  color: teal;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.followers {
+  font-size: 1.15rem;
+  color: brown;
+  margin: 0.5rem 0;
+}
+
+.fa-users {
+  color: #ffd700;
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+.following {
+  font-size: 1.15rem;
+  color: brown;
+  margin: 0.5rem 0;
+}
+
+.repo {
+  font-size: 1.15rem;
+  color: cornflowerblue;
+  margin: 0.5rem;
+}
+
+.fa-code {
+  color: cornflowerblue;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.fa-users-line {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */
